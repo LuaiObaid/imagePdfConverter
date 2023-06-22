@@ -1,0 +1,25 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>PDF Converter</title>
+      <link href="style.css" rel="stylesheet">
+      <script src="script.js" defer></script>
+    </head>
+    <body>
+      <div class="container">
+        <h1 class="header">Image to PDF Converter</h1>
+        <div class="upload-img">
+        <input type="file" accept=".png, .jpg. jpeg" onchange="loadImg(event)">
+        Upload Image
+        </div>
+        <img src="./placeHolder.jpg" id="showImg">
+         <button onclick="pdfDwon()">Image To PDF</button>
+      </div>
+      
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>   
+<script src="app.js"></script>
+</body>
+</html>
